@@ -42,7 +42,8 @@ Render the result to the HTML template.
 Publish the website in Localhost.
 
 ## PROGRAM:
-```views.py
+```
+views.py
 
 from django.shortcuts import render
 def gst_bill(request):
@@ -58,7 +59,7 @@ urls.py
 
 from django.contrib import admin
 from django.urls import path
-from mathapp import views
+from bharathapp import views
 
 urlpatterns = [path('', views.gst_bill, name='gst_bill'),]
 
@@ -76,7 +77,8 @@ urlpatterns = [path('', views.gst_bill, name='gst_bill'),]
             <button type="submit">Calculate</button>
         </form>
     </body>
-</html>```
+</html>
+```
 
 ## OUTPUT - SERVER SIDE:
 ![alt text](<Screenshot 2026-11-24 071449.png>)
